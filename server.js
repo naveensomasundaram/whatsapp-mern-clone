@@ -26,7 +26,7 @@ const pusher = new Pusher({
 app.use(express.json());
 
 // STRICTLY FOR DEVELOPMENT PURPOSE ONLY..
-app.use(cors());
+app.use(cors({origin: 'https://whatsapp-mern-b4195.web.app'}));
 // app.use((req,res,next) => {
 //     res.setHeader("Access-Control-Allow-Origin", "*");
 //     res.setHeader("Access-Control-Allow-Headers", "*");
