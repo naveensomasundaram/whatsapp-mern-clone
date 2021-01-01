@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "engines": {
-    "node": "10.x"
+    "node": "15.x"
   },
   "scripts": {
     "start": "node server.js",
