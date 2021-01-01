@@ -1,2 +1,2 @@
-# whatsapp-mern-clone
-whatsapp-mern-clone
+# whatsapp-mern-clone-backend
+whatsapp-mern-clone-backend
