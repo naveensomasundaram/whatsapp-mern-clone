@@ -10,11 +10,17 @@ import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 9000;
 
-const mongoDBUsername = "";
-const mongoDBPassword = "";
-const mongoDBName = "";
+const mongoDBUsername = "admin";
+const mongoDBPassword = "9gAwOLZp2eckcbF3";
+const mongoDBName = "whatsappdb";
 const mongoDBConnectionURL = `mongodb+srv://${mongoDBUsername}:${mongoDBPassword}@cluster0.pooz4.mongodb.net/${mongoDBName}?retryWrites=true&w=majority`;
-const pusher = new Pusher();
+const pusher = new Pusher({
+    appId: "1131081",
+    key: "afffa0c8d4e515389269",
+    secret: "d2134b8614df9f874adc",
+    cluster: "us3",
+    useTLS: true
+});
 
 // middleware....
 app.use(express.json());
